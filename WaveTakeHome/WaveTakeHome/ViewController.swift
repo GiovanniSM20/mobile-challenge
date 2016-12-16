@@ -53,8 +53,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
             else {
-                let alert = UIAlertController(title: "Could not get any response from the server", message: "Error: \(response.error)", style = .Alert)
-                self.presentViewController(alert, animated: true, completion: nil)
+                let alert = UIAlertController(title: "Check-in realizado com sucesso!", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+                //UIAlertController(title: "Could not get any response from the server", message: "Error: \(response.error)", preferredStyle = .Alert)
+                self.present(alert, animated: true, completion: nil)
+                //let alertController = UIAlertController(title: "Default Style", message: "A standard alert.", preferredStyle: .Alert)
             }
         }
     }

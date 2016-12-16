@@ -1,0 +1,6 @@
+framework module Pods_WaveTakeHome {
+  umbrella header "Pods-WaveTakeHome-umbrella.h"
+
+  export *
+  module * { export * }
+}

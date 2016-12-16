@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D249EE97ADA61E629FAB2AE /* Pods_WaveTakeHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E04F2D77D1A8E7E00F91629 /* Pods_WaveTakeHome.framework */; };
 		5C810E821DE2033F009110DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E811DE2033F009110DF /* AppDelegate.swift */; };
 		5C810E841DE20340009110DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C810E831DE20340009110DF /* ViewController.swift */; };
 		5C810E871DE20340009110DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C810E851DE20340009110DF /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E04F2D77D1A8E7E00F91629 /* Pods_WaveTakeHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveTakeHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C810E7E1DE2033F009110DF /* WaveTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C810E811DE2033F009110DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C810E831DE20340009110DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		5C810E901DE20340009110DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C810E971DE20395009110DF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5C810EEF1DE26C6A009110DF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		CCF7EBF59182171A57AC3895 /* Pods-WaveTakeHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveTakeHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaveTakeHome/Pods-WaveTakeHome.release.xcconfig"; sourceTree = "<group>"; };
+		DC99BCEC1348C0DF9A47AFFF /* Pods-WaveTakeHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveTakeHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaveTakeHome/Pods-WaveTakeHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D249EE97ADA61E629FAB2AE /* Pods_WaveTakeHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37872714E551C420B959FDF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC99BCEC1348C0DF9A47AFFF /* Pods-WaveTakeHome.debug.xcconfig */,
+				CCF7EBF59182171A57AC3895 /* Pods-WaveTakeHome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C810E751DE2033F009110DF = {
 			isa = PBXGroup;
 			children = (
 				5C810E801DE2033F009110DF /* WaveTakeHome */,
 				5C810E7F1DE2033F009110DF /* Products */,
+				37872714E551C420B959FDF2 /* Pods */,
+				BC1FCD6DA5542D8189886CE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,14 @@
 			path = WaveTakeHome;
 			sourceTree = "<group>";
 		};
+		BC1FCD6DA5542D8189886CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E04F2D77D1A8E7E00F91629 /* Pods_WaveTakeHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,10 +114,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C810E931DE20340009110DF /* Build configuration list for PBXNativeTarget "WaveTakeHome" */;
 			buildPhases = (
+				FBA0098A5096651806C241FC /* [CP] Check Pods Manifest.lock */,
 				5C810E7A1DE2033F009110DF /* Sources */,
 				5C810E7B1DE2033F009110DF /* Frameworks */,
 				5C810E7C1DE2033F009110DF /* Resources */,
 				5C810ECF1DE24866009110DF /* Embed Frameworks */,
+				EC25C1E5FB7270CDC91D3ED7 /* [CP] Embed Pods Frameworks */,
+				06AEB9D76498FF1334563225 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HenrySavit;
 				TargetAttributes = {
 					5C810E7D1DE2033F009110DF = {
@@ -150,6 +177,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06AEB9D76498FF1334563225 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveTakeHome/Pods-WaveTakeHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC25C1E5FB7270CDC91D3ED7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaveTakeHome/Pods-WaveTakeHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA0098A5096651806C241FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C810E7A1DE2033F009110DF /* Sources */ = {
@@ -203,6 +278,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -252,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -278,6 +355,7 @@
 		};
 		5C810E941DE20340009110DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC99BCEC1348C0DF9A47AFFF /* Pods-WaveTakeHome.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,6 +369,7 @@
 		};
 		5C810E951DE20340009110DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF7EBF59182171A57AC3895 /* Pods-WaveTakeHome.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
